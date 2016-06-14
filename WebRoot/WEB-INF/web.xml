@@ -6,10 +6,6 @@
 
 	<display-name>cherry</display-name>
 
-	<welcome-file-list>
-		<welcome-file>/hello</welcome-file>
-	</welcome-file-list>
-
 	<filter>
 		<filter-name>JFinalFilter</filter-name>
 		<filter-class>com.jfinal.core.JFinalFilter</filter-class>
