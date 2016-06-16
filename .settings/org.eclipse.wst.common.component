@@ -2,6 +2,7 @@
     <wb-module deploy-name="cherry">
         <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/test"/>
         <property name="context-root" value="cherry"/>
         <property name="java-output-path" value="/cherry/WebRoot/WEB-INF/classes"/>
     </wb-module>

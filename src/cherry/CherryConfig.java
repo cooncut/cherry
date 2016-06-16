@@ -58,4 +58,8 @@ public class CherryConfig extends JFinalConfig {
 	// 配置处理器
 	public void configHandler(Handlers me) {
 	}
+	
+	public static void main(String[] args) {
+		
+	}
 }
