@@ -9,6 +9,7 @@ import com.jfinal.config.Interceptors;
 import com.jfinal.config.JFinalConfig;
 import com.jfinal.config.Plugins;
 import com.jfinal.config.Routes;
+import com.jfinal.i18n.I18nInterceptor;
 import com.jfinal.kit.PropKit;
 import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 import com.jfinal.plugin.c3p0.C3p0Plugin;
@@ -28,6 +29,7 @@ public class CherryConfig extends JFinalConfig {
 		me.setDevMode(PropKit.getBoolean("devMode", false));
 		me.setBaseViewPath("/WEB-INF/views/");
 		me.setViewType(ViewType.JSP);
+		me.setI18nDefaultBaseName("i18n");
 	}
 
 	// 配置路由
@@ -53,6 +55,7 @@ public class CherryConfig extends JFinalConfig {
 
 	// 配置拦截器
 	public void configInterceptor(Interceptors me) {
+		me.add(new I18nInterceptor());
 	}
 
 	// 配置处理器

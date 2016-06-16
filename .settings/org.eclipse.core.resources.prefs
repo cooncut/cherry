@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
-encoding//WebRoot/WEB-INF/views/include/buttom.jsp=UTF-8
+encoding//WebRoot/WEB-INF/views/include/buttom-end.jsp=UTF-8
+encoding//WebRoot/WEB-INF/views/include/top-begin.jsp=UTF-8
 encoding//WebRoot/WEB-INF/views/include/top-end.jsp=UTF-8
 encoding//WebRoot/WEB-INF/views/user/login.jsp=UTF-8
