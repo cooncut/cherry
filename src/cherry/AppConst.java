@@ -12,5 +12,7 @@ public class AppConst {
 	}
 
 	public static final String LOGIN_USER_KEY = "user";
+	
+	public static final String COOKIE_USER_KEY = LOGIN_USER_KEY;
 
 }

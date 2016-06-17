@@ -10,8 +10,8 @@
 <div class="signin">
 	<div class="signin-head"><img src="static/images/test/head_120.png" alt="" class="img-circle"></div>
 	<form class="form-signin" role="form" method="post" action="user/doLogin">
-		<input type="text" class="form-control" id="username" placeholder="用户名" required autofocus />
-		<input type="password" class="form-control" id="password" placeholder="密码" required />
+		<input type="text" class="form-control" id="username" value="${username }" placeholder="用户名" required autofocus />
+		<input type="password" class="form-control" id="password" value="${password }" placeholder="密码" required />
 		<button class="btn btn-lg btn-warning btn-block" type="button" id="loginBtn">登录</button>
 		<label class="checkbox">
 			<input type="checkbox" id="rememberMe"> 记住我

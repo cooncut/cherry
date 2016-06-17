@@ -82,3 +82,42 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown co
 	at com.jfinal.plugin.activerecord.Model.find(Model.java:546)
 	at com.jfinal.plugin.activerecord.Model.find(Model.java:563)
 	... 35 more
+
+2016-06-17 13:59:01
+[WARN]-[Thread: qtp1574382656-24]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /
+
+2016-06-17 15:11:29
+[WARN]-[Thread: qtp560929980-24]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /
+
+2016-06-17 15:29:02
+[WARN]-[Thread: qtp1873444284-26]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /
+
+2016-06-17 15:47:05
+[WARN]-[Thread: qtp1503284705-20]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /index
+
+2016-06-17 15:47:07
+[WARN]-[Thread: qtp1503284705-24]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /index
+
+2016-06-17 15:47:36
+[WARN]-[Thread: qtp1503284705-26]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /index
+
+2016-06-17 15:47:41
+[WARN]-[Thread: qtp1503284705-22]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/home
+
+2016-06-17 15:47:43
+[WARN]-[Thread: qtp1503284705-23]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/home
+
+2016-06-17 17:16:19
+[WARN]-[Thread: qtp1503284705-20]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /
+
+2016-06-17 17:16:33
+[WARN]-[Thread: qtp1503284705-26]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/home
+
+2016-06-17 17:16:37
+[WARN]-[Thread: qtp1503284705-21]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/home
+
+2016-06-17 17:22:33
+[WARN]-[Thread: qtp1503284705-20]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /
+
+2016-06-17 17:24:17
+[WARN]-[Thread: qtp1503284705-20]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /
