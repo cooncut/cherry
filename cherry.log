@@ -121,3 +121,33 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown co
 
 2016-06-17 17:24:17
 [WARN]-[Thread: qtp1503284705-20]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /
+
+2016-07-01 16:45:22
+[WARN]-[Thread: qtp560929980-24]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /
+
+2016-07-01 16:45:22
+[WARN]-[Thread: qtp560929980-26]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /
+
+2016-07-01 16:45:32
+[WARN]-[Thread: qtp560929980-24]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/loginjsp
+
+2016-07-01 16:45:36
+[WARN]-[Thread: qtp560929980-24]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/loginJsp
+
+2016-07-01 16:45:38
+[WARN]-[Thread: qtp560929980-27]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/loginJsp
+
+2016-07-01 17:00:53
+[WARN]-[Thread: qtp560929980-24]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /
+
+2016-07-01 17:01:05
+[WARN]-[Thread: qtp560929980-25]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/home
+
+2016-07-01 17:01:07
+[WARN]-[Thread: qtp560929980-24]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/home
+
+2016-07-01 17:16:08
+[WARN]-[Thread: qtp1873444284-20]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/home
+
+2016-07-01 17:16:10
+[WARN]-[Thread: qtp1873444284-26]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/home

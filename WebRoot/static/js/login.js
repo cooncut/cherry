@@ -30,7 +30,7 @@
 				if(!json) return;
 				if(json.success){
 					//跳到首页
-					location.href = 'user/home';
+					location.href = 'home';
 				}else{
 					layer.alert(json.errMsg, { icon : 2 });
 				}

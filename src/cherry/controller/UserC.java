@@ -1,6 +1,5 @@
 package cherry.controller;
 
-import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 
 import org.apache.commons.codec.binary.Base64;
@@ -22,30 +21,6 @@ public class UserC extends BaseC {
 
 	// 业务层
 	private UserS service = new UserS();
-	
-	// 登陆页面
-	public void loginView() {
-		
-		//设置页面标题
-		setAttr("pageTitle", res.get("UserC_loginView_001"));
-		
-		User user = getSessionAttr(AppConst.LOGIN_USER_KEY);
-		String cookieJmVal = getCookie(DigestUtils.md5Hex(AppConst.COOKIE_USER_KEY));
-		if (user != null) {// 先从session中看是否能得到值
-			setAttr("username", user.getEmail());
-		} else if (StringUtils.isNotBlank(cookieJmVal)) {// 如果cookie中有值
-			byte[] data = Base64.decodeBase64(cookieJmVal.getBytes(Charset.forName("utf-8")));
-			try {
-				String cookieVal = new String(data, "utf-8");
-				String[] arr = cookieVal.split("@@");
-				setAttr("username", arr[0]);
-				// setAttr("password", arr[1]);
-			} catch (UnsupportedEncodingException e) {
-				e.printStackTrace();
-			}
-		}
-		renderJsp("login.jsp");
-	}
 
 	// 登陆操作
 	public void login() {
@@ -81,12 +56,5 @@ public class UserC extends BaseC {
 		setSessionAttr(AppConst.LOGIN_USER_KEY, user);
 		// 写入登陆成功的表示
 		renderJson(new JsonResult(true));
-	}
-
-	// 用户主页home.jsp
-	public void homeJsp() {
-		//设置页面标题
-		setAttr("pageTitle", res.get("UserC_homeJsp_001"));
-		renderJsp("home.jsp");
 	}
 }

@@ -1,6 +1,7 @@
 package cherry;
 
 import cherry.controller.UserC;
+import cherry.controller.ViewC;
 import cherry.model._MappingKit;
 
 import com.jfinal.config.Constants;
@@ -34,6 +35,7 @@ public class CherryConfig extends JFinalConfig {
 
 	// 配置路由
 	public void configRoute(Routes me) {
+		me.add("/", ViewC.class);
 		me.add("/user", UserC.class);
 	}
 
@@ -61,8 +63,8 @@ public class CherryConfig extends JFinalConfig {
 	// 配置处理器
 	public void configHandler(Handlers me) {
 	}
-	
+
 	public static void main(String[] args) {
-		
+
 	}
 }
