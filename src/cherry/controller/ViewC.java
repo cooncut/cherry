@@ -26,7 +26,7 @@ public class ViewC extends BaseC {
 	// 登陆页面login.jsp
 	public void login() {
 		// 设置页面标题
-		setAttr("pageTitle", res.get("UserC_loginView_001"));
+		setAttr(AppConst.PAGE_TITLE_KEY, res.get("ViewC_login_001"));
 
 		User user = getSessionAttr(AppConst.LOGIN_USER_KEY);
 		String cookieJmVal = getCookie(DigestUtils.md5Hex(AppConst.COOKIE_USER_KEY));
@@ -49,7 +49,7 @@ public class ViewC extends BaseC {
 	// 用户主页home.jsp
 	public void home() {
 		// 设置页面标题
-		setAttr("pageTitle", res.get("UserC_homeJsp_001"));
+		setAttr(AppConst.PAGE_TITLE_KEY, res.get("ViewC_home_001"));
 		renderJsp("home.jsp");
 	}
 

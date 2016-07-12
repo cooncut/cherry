@@ -1,11 +1,23 @@
+Table: t_baby
+--------------+--------------+------+-----+---------+---------
+ Field        | Type         | Null | Key | Default | Remarks 
+--------------+--------------+------+-----+---------+---------
+ id           | BIGINT(19)   | NO   | PRI |         |         
+ name         | VARCHAR(255) | YES  |     |         | 学名      
+ smallName    | VARCHAR(255) | YES  |     |         | 乳名      
+ sex          | TINYINT(3)   | YES  |     |         | 性别      
+ birthday     | DATETIME(19) | YES  |     |         | 生日      
+ birthdayType | TINYINT(3)   | YES  |     |         | 生日类型，农历或阳历
+ birthWeigth  | DOUBLE(22)   | YES  |     |         | 出生重量    
+--------------+--------------+------+-----+---------+---------
+
 Table: t_user
-------------+--------------+------+-----+---------+---------
- Field      | Type         | Null | Key | Default | Remarks 
-------------+--------------+------+-----+---------+---------
- id         | BIGINT(19)   | NO   | PRI |         | 主键自增    
- email      | VARCHAR(255) | NO   |     |         | 邮箱/登录名  
- password   | VARCHAR(255) | NO   |     |         | 登陆密码（加密）
- name       | VARCHAR(255) | YES  |     |         | 真实姓名    
- test_hello | VARCHAR(255) | YES  |     |         |         
-------------+--------------+------+-----+---------+---------
+----------+--------------+------+-----+---------+---------
+ Field    | Type         | Null | Key | Default | Remarks 
+----------+--------------+------+-----+---------+---------
+ id       | BIGINT(19)   | NO   | PRI |         | 主键自增    
+ email    | VARCHAR(255) | NO   |     |         | 邮箱/登录名  
+ password | VARCHAR(255) | NO   |     |         | 登陆密码（加密）
+ name     | VARCHAR(255) | YES  |     |         | 真实姓名    
+----------+--------------+------+-----+---------+---------
 

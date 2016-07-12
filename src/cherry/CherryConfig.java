@@ -1,5 +1,6 @@
 package cherry;
 
+import cherry.Interceptor.LoginInterceptor;
 import cherry.controller.UserC;
 import cherry.controller.ViewC;
 import cherry.model._MappingKit;
@@ -13,7 +14,7 @@ import com.jfinal.config.Routes;
 import com.jfinal.i18n.I18nInterceptor;
 import com.jfinal.kit.PropKit;
 import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
-import com.jfinal.plugin.c3p0.C3p0Plugin;
+import com.jfinal.plugin.druid.DruidPlugin;
 import com.jfinal.render.ViewType;
 
 /**
@@ -39,17 +40,17 @@ public class CherryConfig extends JFinalConfig {
 		me.add("/user", UserC.class);
 	}
 
-	public static C3p0Plugin createC3p0Plugin() {
-		return new C3p0Plugin(PropKit.get("jdbc.url"), PropKit.get("jdbc.username"), PropKit.get("jdbc.password"));
+	private static DruidPlugin createDruidPlugin() {
+		return new DruidPlugin(PropKit.get("jdbc.url"), PropKit.get("jdbc.username"), PropKit.get("jdbc.password"));
 	}
 
 	// 配置插件
 	public void configPlugin(Plugins me) {
 		// 配置C3p0数据库连接池插件
-		C3p0Plugin C3p0Plugin = createC3p0Plugin();
-		me.add(C3p0Plugin);
+		DruidPlugin druidPlugin = createDruidPlugin();
+		me.add(druidPlugin);
 		// 配置ActiveRecord插件
-		ActiveRecordPlugin arp = new ActiveRecordPlugin(C3p0Plugin);
+		ActiveRecordPlugin arp = new ActiveRecordPlugin(druidPlugin);
 		me.add(arp);
 		// 所有配置在 MappingKit 中搞定
 		_MappingKit.mapping(arp);
@@ -57,7 +58,9 @@ public class CherryConfig extends JFinalConfig {
 
 	// 配置拦截器
 	public void configInterceptor(Interceptors me) {
-		me.add(new I18nInterceptor());
+		// 全局拦截器
+		me.addGlobalActionInterceptor(new LoginInterceptor());
+		me.addGlobalActionInterceptor(new I18nInterceptor());
 	}
 
 	// 配置处理器

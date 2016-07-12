@@ -41,12 +41,4 @@ public abstract class BaseUser<M extends BaseUser<M>> extends Model<M> implement
 		return get("name");
 	}
 
-	public void setTestHello(java.lang.String testHello) {
-		set("test_hello", testHello);
-	}
-
-	public java.lang.String getTestHello() {
-		return get("test_hello");
-	}
-
 }

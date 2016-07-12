@@ -10,9 +10,12 @@ import com.jfinal.plugin.activerecord.generator.Generator;
 import com.jfinal.plugin.c3p0.C3p0Plugin;
 
 /**
- * GeneratorDemo
+ * 生成数据库到实体的配置
+ * 
+ * @author wenjizou
+ * 
  */
-public class CherryGenerator {
+public class CherryORMGenerator {
 
 	public static DataSource getDataSource() {
 		Prop p = PropKit.use("app.txt");
